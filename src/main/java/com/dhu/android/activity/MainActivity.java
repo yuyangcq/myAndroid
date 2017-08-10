@@ -48,8 +48,8 @@ public class MainActivity extends Activity {
             List<ScanResult> noSameNameResults = WifiUtil.noSameName(results);
             //对集合中的对象按照SSID名称进行排序
             Collections.sort(noSameNameResults, new MySortBySSID());
-            mEditText.setText("于洋");
-            String message = mEditText.getText().toString() + "/r/n";
+
+            String message = mEditText.getText().toString();
             try {
                 //创建Socket
                 socket = new Socket("172.16.201.176", 54321); //IP：172.16.201.176，端口54321

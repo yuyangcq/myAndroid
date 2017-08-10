@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务器IP:"/>
+
+        <EditText
+                android:id="@+id/edit_Server_Ip"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口:"/>
+
+        <EditText
+                android:id="@+id/edit_Server_Port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="54321"
+                android:inputType="number"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/btn_tcpServerConn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接服务器"/>
+        <Button
+                android:id="@+id/btn_tcpServerClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="断开服务器"/>
+        <Button
+                android:id="@+id/btn_tcpCleanServerRecv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始定位"/>
+        <Button
+                android:id="@+id/btn_tcpCleanServerSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.35">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="接收区："/>
+        <TextView
+                android:id="@+id/txt_ServerRcv"
+                android:layout_width="fill_parent"
+                android:layout_weight="5"
+                android:layout_height="0dp"
+                android:textColor="#000000"
+                android:background="#87CEFA"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.35">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="发送区："/>
+
+        <TextView
+                android:id="@+id/txt_ServerSend"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:textColor="#000000"
+                android:background="#8A2BE2"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.1">
+        <EditText
+                android:id="@+id/edit_Send"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="fill_parent"/>
+        <Button
+                android:id="@+id/btn_tcpServerSend"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:text="发送"/>
+    </LinearLayout>
+
+
+</LinearLayout>
