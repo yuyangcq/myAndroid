@@ -6,11 +6,15 @@ package com.dhu.android.beans;
  */
 public class Signal {
     //实体类的属性和表的字段名称一一对应
-    private long collectionTime;
     private String RP;
     private int RSSI;
 
     public Signal() {
+    }
+
+    public Signal(String RP, int RSSI) {
+        this.RP = RP;
+        this.RSSI = RSSI;
     }
 
     public int getRSSI() {
@@ -27,14 +31,6 @@ public class Signal {
 
     public void setRP(String RP) {
         this.RP = RP;
-    }
-
-    public long getCollectionTime() {
-        return collectionTime;
-    }
-
-    public void setCollectionTime(long collectionTime) {
-        this.collectionTime = collectionTime;
     }
 
 

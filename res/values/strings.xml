@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello android-quickstart!</string>
-    <string name="app_name">indoorPositioning</string>
+    <string name="app_name">室内定位</string>
+    <string name="welcome">室内定位\n\n由你而改变</string>
+
+
 </resources>
