@@ -15,9 +15,7 @@ public class SelectionActivity extends Activity {
     private ImageView scene3;
     private ImageView scene4;
 
-
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -3,7 +3,7 @@
               android:layout_height="fill_parent"
               android:orientation="vertical"
               android:background="@drawable/bg3">
-    <LinearLayout
+    <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:orientation="vertical"
@@ -15,10 +15,17 @@
                 android:layout_height="fill_parent"
                 android:orientation="vertical"
                 android:layout_weight="0.221"
-
                 android:src="@drawable/fangjian"/>
 
-    </LinearLayout>
+        <!--<ImageView-->
+                <!--android:id="@+id/imageView2"-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_marginLeft="300dip"-->
+                <!--android:layout_marginTop="50dip"-->
+                <!--android:src="@drawable/daohang_youshang"/>-->
+
+    </RelativeLayout >
 
 
     <LinearLayout
@@ -36,7 +43,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="2"
                 android:layout_height="wrap_content"
-                android:hint="192.168.1.1"
+                android:hint="10.202.147.98"
                 android:gravity="center"/>
         <TextView
                 android:layout_width="wrap_content"
@@ -75,7 +82,7 @@
                 android:id="@+id/btn_tcpClean"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="清除"/>
+                android:text="清除数据"/>
     </LinearLayout>
 
     <LinearLayout
@@ -88,7 +95,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="bottom"
-                android:text="本地数据接收区："/>
+                android:text="实时采集当前位置信号强度："/>
         <TextView
                 android:id="@+id/txt_ServerRcv"
                 android:layout_width="fill_parent"
@@ -109,9 +116,9 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="bottom"
-                android:text="服务器数据接收区："/>
+                android:text="当前位置定位坐标："/>
         <TextView
-                android:id="@+id/txt_ImageRcv"
+                android:id="@+id/txt_Location"
                 android:layout_width="fill_parent"
                 android:layout_weight="5"
                 android:layout_height="0dp"
@@ -120,45 +127,5 @@
         />
 
     </LinearLayout>
-
-    <!--<LinearLayout-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:orientation="vertical"-->
-    <!--android:layout_weight="0.35">-->
-    <!--<TextView-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:layout_weight="1"-->
-    <!--android:text="发送区："/>-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/txt_ServerSend"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="0dp"-->
-    <!--android:layout_weight="7"-->
-    <!--android:textColor="#000000"-->
-    <!--android:background="#8A2BE2"/>-->
-    <!--</LinearLayout>-->
-
-    <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="0.1">
-        <EditText
-                android:id="@+id/edit_Send"
-                android:layout_width="0dp"
-                android:layout_weight="5"
-                android:layout_height="fill_parent"/>
-        <Button
-                android:id="@+id/btn_tcpServerSend"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="fill_parent"
-                android:layout_gravity="right"
-                android:text="发送"/>
-    </LinearLayout>
-
 
 </LinearLayout>

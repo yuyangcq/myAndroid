@@ -2,7 +2,7 @@
 <resources>
     <string name="hello">Hello android-quickstart!</string>
     <string name="app_name">室内定位</string>
-    <string name="welcome">室内定位\n\n由你而改变</string>
-
-
+    <string name="app_name_selection">场景选择</string>
+    <string name="app_name_one">场景一</string>
+    <string name="welcome">室内定位\n\n因你而改变</string>
 </resources>
